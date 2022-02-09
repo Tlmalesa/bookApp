@@ -1,0 +1,23 @@
+
+  <div class="card text-center" style="width:50%;margin-left: 25%;margin-top: 42px;">
+    <div class="card-header" style="color: rgb(24, 23, 23);">User details for id: {{user.id}}</div>
+    <div class="card-body">
+      <p class="card-text">Name: {{user.name}}</p>
+      <p class="card-text">Email: {{user.email}}</p>
+      <p class="card-text">Username: {{user.username}}</p>
+      <p class="card-text">Phone Number: {{user.phone}}</p>
+      <p class="card-text">Website: {{user.website}}</p>
+      <p class="card-text">Address: {{user.address.city}},{{user.address.geo.lat}},{{user.address.geo.lng}},{{user.address.street}}
+        ,{{user.address.suite}},{{user.address.zipcode}}
+      </p>
+      <p class="card-text">Company: {{user.company.bs}},{{user.company.catchPhrase}},{{user.company.name}}</p>
+      <div class="product-price-btn">
+        <button [routerLink]="['/user']" type="button">Back</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  

@@ -1,0 +1,36 @@
+<div class="form" style="margin-top: 12px;">
+  <div class="subtitle">Add new book</div>
+  <div class="input-container ic1">
+    <input id="title" class="input" type="text" placeholder=" " [(ngModel)]="title"/>
+    <div class="cut"></div>
+    <label for="title" class="placeholder">Title</label>
+  </div>
+  <div class="input-container ic2">
+    <input id="author" class="input" type="text" placeholder=" " [(ngModel)]="author"/>
+    <div class="cut"></div>
+    <label for="author" class="placeholder">Author</label>
+  </div>
+  <div class="input-container ic2">
+    <input id="description" class="input" type="text" placeholder=" " [(ngModel)]="description" />
+    <div class="cut cut-short"></div>
+    <label for="description" class="placeholder">Description</label>
+  </div>
+
+  <div class="input-container ic2">
+    <input id="image" class="input" type="text-message" placeholder=" " [(ngModel)]="image"/>
+    <div class="cut cut-short"></div>
+    <label for="image" class="placeholder">ImageURL</label>
+  </div>
+  <br>
+  <div class="product-price-btn">
+    <button (click)="addBook()" type="button">Add</button>
+  </div>
+  <br>
+  <div class="product-price1-btn">
+    <button [routerLink]="['/books']" type="button">Back</button>
+  </div>
+</div>
+
+
+
+
