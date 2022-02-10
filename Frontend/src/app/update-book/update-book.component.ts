@@ -16,7 +16,7 @@ export class UpdateBookComponent implements OnInit {
   user:any={};
   bookId:any;
   updateBook:boolean=false;
-
+   showMsg:boolean = false;
  
   ngOnInit(): void {
     this.bookId=localStorage.getItem("id");//getting book id from local storage
@@ -31,11 +31,14 @@ export class UpdateBookComponent implements OnInit {
     
   }
 bookUpdating(){//updating the book ifnormation
- 
+   if(confirm("Are you sure you want to edit this item ")) {
+      //load and displaying windows dialog message
+    window.location.reload();
   this.booksService.EditBook(this.bookId,this.user).subscribe(res=>{
     console.log(res);
-    
+       this.showMsg = true;
+  
   })
-
+   }
 }
 }
