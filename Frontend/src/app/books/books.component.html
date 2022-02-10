@@ -1,7 +1,9 @@
 
 <div class="product-price-btn">
- 
-  <button [routerLink]="['/add']" type="button" style="margin-left: 15%;margin-top: 22px;">Add Book</button>
+  <div class="card-body" style="margin-left: 15%;margin-top: 22px;">
+    <a [routerLink]="['/add']" class="card-link" >Add Book</a>
+    <a [routerLink]="['/app']" class="card-link">Back</a>
+  </div>
 </div>
 <div class="container">
     <div class="card" *ngFor='let items of books'>
@@ -16,11 +18,12 @@
         <h4> {{items.title}}</h4>
         <h6> {{items.author}}</h6>
         <p>  {{items.description}}</p>
+        <div class="card-body">
+          <a [routerLink]="['/books']" class="card-link" style="margin-top: -12px;" (click)="delete(items._id)">Delete</a>
+          <a [routerLink]="['/books',items._id]" (click)="edit(items._id)"class="card-link">Edit</a>
+        </div>
       </div>
-      <div class="card-body">
-        <a [routerLink]="['/books']" class="card-link" style="margin-top: -12px;" (click)="delete(items._id)">Delete</a>
-        <a href="#" class="card-link">Edit</a>
-      </div>
+     
     </div>
     </div>
     

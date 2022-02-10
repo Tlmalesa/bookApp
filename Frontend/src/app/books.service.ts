@@ -18,7 +18,9 @@ export class BooksService {
         return res
       }));
   }
-
+getOneBook(id:any){
+  return this.http.get(`${this.BOOKS_URL}`+ id);
+}
   DeleteBook(id:any){
    
       return this.http.delete(`${this.BOOKS_URL}`+ id);
@@ -29,7 +31,7 @@ export class BooksService {
   }
 
   EditBook(id:any,book:BooksInfo): Observable<BooksInfo>{
-    return this.http.put<BooksInfo>(`${this.BOOKS_URL}update?id=${id}`,book);
+    return this.http.put<BooksInfo>(`${this.BOOKS_URL}${id}`,book);
 }
 
 }

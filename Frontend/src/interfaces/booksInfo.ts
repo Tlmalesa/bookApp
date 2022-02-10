@@ -1,7 +1,7 @@
 export interface BooksInfo{
     title: string;
     author: string;
-    id: number;
+    _id?: string;
     description: string;
     image: string;
     

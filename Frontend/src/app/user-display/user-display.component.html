@@ -1,6 +1,8 @@
 
  <div class="product-price-btn">
-  <button [routerLink]="['/app']" type="button">Back</button>
+  <div class="card-body" style="margin-left: 15%;margin-top: 22px;">
+    <a [routerLink]="['/app']" class="card-link">Back</a>
+  </div>
 </div>
 <div class="card text-center" style="width:50%;margin-left: 25%;margin-top: 42px;">
   <div class="card-header" style="color: rgb(24, 23, 23);">Users Names</div>
@@ -10,6 +12,5 @@
     <div class="product-price-btn">
       <button [routerLink]="['/user',user.id]" type="button">{{user.name}}</button>
     </div>
-    <!-- <p [routerLink]="['/user',user.id]">Name: {{user.name}}</p> -->
   </div>
 </div>

@@ -1,0 +1,124 @@
+
+  body {
+    align-items: center;
+    // background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #79b0a1;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 580px;
+    padding: 20px;
+    margin-left: 35%;
+    width: 450px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: white;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+//   .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-35px) translateX(10px) scale(0.75);
+  }
+.product-price-btn button {
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 30px 0 46px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #9cebd5;
+    cursor: pointer;
+    outline: none;
+  }
+  
+//   .product-price-btn button:hover {
+//     background-color: #79b0a1;
+//   }
+  .product-price1-btn button {
+    // float: right;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 30px 0 46px;
+    // margin-left: 12px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #9cebd5;
+    cursor: pointer;
+    outline: none;
+  }
+  
+//   .product-price1-btn button:hover {
+//     background-color: #79b0a1;
+//   }

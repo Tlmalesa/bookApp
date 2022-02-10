@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BooksService } from '../books.service';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-books',
   templateUrl: './books.component.html',
@@ -11,7 +12,7 @@ export class BooksComponent implements OnInit {
 
    books: any;
    showMsg:boolean = false;
-
+  // id:any;
 
   constructor(private router:Router,public booksService: BooksService) { }
 
@@ -20,12 +21,14 @@ export class BooksComponent implements OnInit {
     this.books=res;
     console.log(res);
     });
-
+    
   }
-
-addBook(){
-
+edit(id:any){
+  localStorage.setItem("id",id);
+ 
+  
 }
+
 onSubmit(){
  
     this.router.navigate(['/books']);
