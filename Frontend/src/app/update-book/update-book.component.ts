@@ -32,6 +32,7 @@ export class UpdateBookComponent implements OnInit {
   }
 bookUpdating(){//updating the book ifnormation
    if(confirm("Are you sure you want to edit this item ")) {
+    
       //load and displaying windows dialog message
     window.location.reload();
   this.booksService.EditBook(this.bookId,this.user).subscribe(res=>{

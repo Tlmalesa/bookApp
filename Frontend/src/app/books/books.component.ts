@@ -12,7 +12,7 @@ export class BooksComponent implements OnInit {
 
    books: any;
    showMsg:boolean = false;
-  // id:any;
+
 
   constructor(private router:Router,public booksService: BooksService) { }
 
@@ -31,7 +31,7 @@ edit(id:any){
 
 onSubmit(){
  
-    this.router.navigate(['/books']);
+    this.router.navigate(['/books']);//navigation
 }
 deleteABook:any;
 
