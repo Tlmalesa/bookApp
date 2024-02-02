@@ -21,7 +21,7 @@ export class BooksService {
   }
 
   //getting the book by ID
-  getOneBook(id:any){
+getOneBook(id:any){
   return this.http.get(`${this.BOOKS_URL}`+ id);
 }
 //delete the book
@@ -31,7 +31,8 @@ export class BooksService {
       return this.http.delete(`${this.BOOKS_URL}`+ id);
   }
 //add a book
-      AddBook(data:any){
+
+  AddBook(data:any){
       return this.http.post(`${this.BOOKS_URL}`,data);
   }
 
