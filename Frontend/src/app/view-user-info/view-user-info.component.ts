@@ -20,7 +20,6 @@ user:any={}
     if(params.id){
       this.displayBooksService.getUserbyId(params.id).subscribe(res=>{
         this.user=res;
-        console.log("kkk",res);
         
       })
     }
