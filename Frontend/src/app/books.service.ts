@@ -21,7 +21,6 @@ export class BooksService {
   }
 
   //getting the book by ID
-
 getOneBook(id:any){
   return this.http.get(`${this.BOOKS_URL}`+ id);
 }

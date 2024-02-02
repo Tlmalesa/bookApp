@@ -7,6 +7,7 @@ import { ViewUserInfoComponent } from './view-user-info/view-user-info.component
 import { LandingComponent } from './landing/landing.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
 
+//app routes
 const routes: Routes = [
   {path: '', redirectTo: '/app', pathMatch: 'full' },
   {path:'app', component:LandingComponent},
